@@ -1,13 +1,9 @@
 package com.pwgmongo
 
-import com.mongodb.MongoClient
-import com.mongodb.client.MongoDatabase
 import com.pwmongo.Foo
 import grails.converters.JSON
 
 class FooController {
-
-    MongoClient mongo
 
     def index() {
         Foo.all*.delete()
