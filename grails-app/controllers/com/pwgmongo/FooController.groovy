@@ -8,6 +8,6 @@ class FooController {
     def index() {
         Foo.all*.delete()
         new Foo(fooName: 'Foo Test', fooAge: 94).save(flush: true)
-        render Foo.all as JSON
+        [fooList: Foo.all]
     }
 }

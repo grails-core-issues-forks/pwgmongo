@@ -1,0 +1,7 @@
+import com.pwmongo.Foo
+
+model {
+    Iterable<Foo> fooList
+}
+
+json tmpl.foo(fooList)

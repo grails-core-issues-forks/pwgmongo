@@ -1,0 +1,12 @@
+import com.pwmongo.Foo
+
+model {
+    Foo foo
+}
+
+json {
+    fooName foo.fooName
+    fooAge foo.fooAge
+    barIds foo.barIds
+    id foo.id.toString()
+}
